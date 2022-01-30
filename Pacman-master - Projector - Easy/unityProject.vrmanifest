@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.pacmanclone.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\HAL\\Downloads\\Pacman-master - Projector - Easy\\Pacman-master - Projector - Easy\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "PacmanClone [Testing]"
+        }
+      }
+    }
+  ]
+}
