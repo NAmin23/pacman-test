@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Users\acryl\OneDrive\Desktop\2019.3.15f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{BECEA6AB-6693-F40A-032B-7C564ABCB2CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_15;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Users\acryl\OneDrive\Desktop\2019.3.15f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Users\acryl\OneDrive\Desktop\2019.3.15f1\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\AI.cs" />
+     <Compile Include="Assets\Scripts\Energizer.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\GameGUINavigation.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\MenuNavigation.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\Move.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\NameToTitle.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\PacdotSpawner.cs" />
+     <Compile Include="Assets\Scripts\GUI Scripts\Scores.cs" />
+     <Compile Include="Assets\Scripts\GhostMove.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\MusicManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\TileManager.cs" />
+     <Compile Include="Assets\Scripts\Pacdot.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Point.cs" />
+     <Compile Include="Assets\Scripts\TargetGizmo.cs" />
+     <Compile Include="Assets\Scripts\UIScript.cs" />
+     <Compile Include="Assets\UserScripts\ColliderPosition.cs" />
+     <Compile Include="Assets\UserScripts\Collision.cs" />
+     <Compile Include="Assets\UserScripts\DisableTracking.cs" />
+     <Compile Include="Assets\UserScripts\EnableScript.cs" />
+     <Compile Include="Assets\UserScripts\MimicMove.cs" />
+     <Compile Include="Assets\UserScripts\ResetCamera.cs" />
+     <Compile Include="Assets\UserScripts\SteamVR_ControllerManager.cs" />
+     <None Include="Assets\dosia_base_right_data1.txt" />
+     <None Include="Assets\noor_base_right_data27.txt" />
+     <None Include="Assets\_data4.txt" />
+     <None Include="Assets\nooramin_data31.txt" />
+     <None Include="Assets\nooramin_data44.txt" />
+     <None Include="Assets\dosia_base_none_data0.txt" />
+     <None Include="Assets\noor_base_right_data15.txt" />
+     <None Include="Assets\noor_base_right_data6.txt" />
+     <None Include="Assets\dosia_mirrored_right_data5.txt" />
+     <None Include="Assets\nooramin_data26.txt" />
+     <None Include="Assets\_data28.txt" />
+     <None Include="Assets\jztest.txt" />
+     <None Include="Assets\kim_left_data5.txt" />
+     <None Include="Assets\nooramin_data36.txt" />
+     <None Include="Assets\nooramin_none_data18.txt" />
+     <None Include="Assets\nooramin_data48.txt" />
+     <None Include="Assets\dosia_base_none.txt" />
+     <None Include="Assets\nooramin_none_data1.txt" />
+     <None Include="Assets\yuri_mirrored_none_data7.txt" />
+     <None Include="Assets\noor_base_none_data1.txt" />
+     <None Include="Assets\yuri_base_none_data6.txt" />
+     <None Include="Assets\kim_mom_right.txt" />
+     <None Include="Assets\nooramin_data57.txt" />
+     <None Include="Assets\noor_base_none_data21.txt" />
+     <None Include="Assets\nooramin_data45.txt" />
+     <None Include="Assets\peggy_right_data0.txt" />
+     <None Include="Assets\nooramin_none_data13.txt" />
+     <None Include="Assets\noor_base_none_data6.txt" />
+     <None Include="Assets\kim_left_glasses.txt" />
+     <None Include="Assets\nooramin_data1.txt" />
+     <None Include="Assets\nooramin_data50.txt" />
+     <None Include="Assets\nooramin_data40.txt" />
+     <None Include="Assets\noor_base_none_data4.txt" />
+     <None Include="Assets\nooramin_none_data14.txt" />
+     <None Include="Assets\nooramin_data46.txt" />
+     <None Include="Assets\nooramin_data10.txt" />
+     <None Include="Assets\nooramin_none_data15.txt" />
+     <None Include="Assets\yuri_mirrored_none_data3.txt" />
+     <None Include="Assets\nooramin_none_data36.txt" />
+     <None Include="Assets\tori_base_left_data0.txt" />
+     <None Include="Assets\_data10.txt" />
+     <None Include="Assets\noor_base_right_data2.txt" />
+     <None Include="Assets\yuri_base_none_data10.txt" />
+     <None Include="Assets\nooramin_none_data26.txt" />
+     <None Include="Assets\noor_base_right_data9.txt" />
+     <None Include="Assets\_data15.txt" />
+     <None Include="Assets\nooramin_data56.txt" />
+     <None Include="Assets\_data12.txt" />
+     <None Include="Assets\noor_test_data0.txt" />
+     <None Include="Assets\nooramin_data2.txt" />
+     <None Include="Assets\noor_base_none.txt" />
+     <None Include="Assets\nooramin_data25.txt" />
+     <None Include="Assets\noor_base_none_data25.txt" />
+     <None Include="Assets\noor_base_none_data24.txt" />
+     <None Include="Assets\yuri_base_none_data11.txt" />
+     <None Include="Assets\jonathantest1.txt" />
+     <None Include="Assets\jonathantest2.txt" />
+     <None Include="Assets\nooramin_none_data19.txt" />
+     <None Include="Assets\nooramin_none_data20.txt" />
+     <None Include="Assets\noor_base_right_data14.txt" />
+     <None Include="Assets\nooramin_none_data22.txt" />
+     <None Include="Assets\noor_base_none_data14.txt" />
+     <None Include="Assets\noor_base_none_data7.txt" />
+     <None Include="Assets\nooramin_data30.txt" />
+     <None Include="Assets\dosia_mirrored_right_data0.txt" />
+     <None Include="Assets\noor_base_none_data12.txt" />
+     <None Include="Assets\nooramin_data55.txt" />
+     <None Include="Assets\nooramin_none_data7.txt" />
+     <None Include="Assets\_data11.txt" />
+     <None Include="Assets\_data34.txt" />
+     <None Include="Assets\nooramin_data37.txt" />
+     <None Include="Assets\_data19.txt" />
+     <None Include="Assets\yuri_base_none_data4.txt" />
+     <None Include="Assets\kim_left_data1.txt" />
+     <None Include="Assets\yuri_base_none.txt" />
+     <None Include="Assets\noor_base_right_data22.txt" />
+     <None Include="Assets\noor_base_right_data18.txt" />
+     <None Include="Assets\nooramin_data4.txt" />
+     <None Include="Assets\kim_right_colliders_glasses.txt" />
+     <None Include="Assets\noor_base_right_data4.txt" />
+     <None Include="Assets\nooramin_data39.txt" />
+     <None Include="Assets\dosia_mirrored_right_data1.txt" />
+     <None Include="Assets\kim_left_data3.txt" />
+     <None Include="Assets\nooramin_data51.txt" />
+     <None Include="Assets\_data24.txt" />
+     <None Include="Assets\_data39.txt" />
+     <None Include="Assets\_data32.txt" />
+     <None Include="Assets\nooramin.txt" />
+     <None Include="Assets\noor_base_right_data29.txt" />
+     <None Include="Assets\participant_x_data0.txt" />
+     <None Include="Assets\peggy_base_right_data0.txt" />
+     <None Include="Assets\dosia_base_right_data0.txt" />
+     <None Include="Assets\_data23.txt" />
+     <None Include="Assets\noor_base_none_data0.txt" />
+     <None Include="Assets\kim_data0.txt" />
+     <None Include="Assets\noor_base_none_data13.txt" />
+     <None Include="Assets\nooramin_data52.txt" />
+     <None Include="Assets\noor_base_none_data19.txt" />
+     <None Include="Assets\noor_base_right_data13.txt" />
+     <None Include="Assets\nooramin_none_data17.txt" />
+     <None Include="Assets\kim_right_colliders_glasses_data0.txt" />
+     <None Include="Assets\_data35.txt" />
+     <None Include="Assets\_data26.txt" />
+     <None Include="Assets\mvk_data0.txt" />
+     <None Include="Assets\mvk.txt" />
+     <None Include="Assets\none_base_none_data0.txt" />
+     <None Include="Assets\noor_base_none_data15.txt" />
+     <None Include="Assets\nooramin_data20.txt" />
+     <None Include="Assets\nooramin_none.txt" />
+     <None Include="Assets\yuri_mirrored_none_data6.txt" />
+     <None Include="Assets\nooramin_data42.txt" />
+     <None Include="Assets\kim_non_dominant_data4.txt" />
+     <None Include="Assets\yuri_mirrored_none_data1.txt" />
+     <None Include="Assets\nooramin_data49.txt" />
+     <None Include="Assets\kim_non_dominant_data6.txt" />
+     <None Include="Assets\noor_base_right_data3.txt" />
+     <None Include="Assets\nooramin_data6.txt" />
+     <None Include="Assets\nooramin_data54.txt" />
+     <None Include="Assets\kim_left_data4.txt" />
+     <None Include="Assets\nooramin_data5.txt" />
+     <None Include="Assets\noor_base_right_data24.txt" />
+     <None Include="Assets\noor_base_right_data23.txt" />
+     <None Include="Assets\noor_base_right_data19.txt" />
+     <None Include="Assets\noor_none.txt" />
+     <None Include="Assets\noor_base_none_data27.txt" />
+     <None Include="Assets\lucia_right_data0.txt" />
+     <None Include="Assets\noor_base_none_data5.txt" />
+     <None Include="Assets\yuri_base_none_data2.txt" />
+     <None Include="Assets\peggy_base_none_data0.txt" />
+     <None Include="Assets\yuri_base_none_data9.txt" />
+     <None Include="Assets\yuri_mirrored_none_data2.txt" />
+     <None Include="Assets\jonathantest1_data0.txt" />
+     <None Include="Assets\jztest_data0.txt" />
+     <None Include="Assets\dosia_base_right_data6.txt" />
+     <None Include="Assets\jonathanrealtest1_data0.txt" />
+     <None Include="Assets\yuri_mirrored_none_data4.txt" />
+     <None Include="Assets\peggy_mirrored_none_data0.txt" />
+     <None Include="Assets\nooramin_none_data2.txt" />
+     <None Include="Assets\yuri_base_none_data3.txt" />
+     <None Include="Assets\_data29.txt" />
+     <None Include="Assets\_data16.txt" />
+     <None Include="Assets\nooramin_none_data6.txt" />
+     <None Include="Assets\noor_base_none_data17.txt" />
+     <None Include="Assets\nooramin_none_data9.txt" />
+     <None Include="Assets\noor_base_right_data12.txt" />
+     <None Include="Assets\yuri_base_none_data8.txt" />
+     <None Include="Assets\kim_non_dominant_data1.txt" />
+     <None Include="Assets\_data18.txt" />
+     <None Include="Assets\nooramin_data35.txt" />
+     <None Include="Assets\_data38.txt" />
+     <None Include="Assets\yuri_mirrored_none_data5.txt" />
+     <None Include="Assets\_data7.txt" />
+     <None Include="Assets\nooramin_data15.txt" />
+     <None Include="Assets\nooramin_data21.txt" />
+     <None Include="Assets\nooramin_data41.txt" />
+     <None Include="Assets\nooramin_data16.txt" />
+     <None Include="Assets\lucia_right_data1.txt" />
+     <None Include="Assets\nooramin_data12.txt" />
+     <None Include="Assets\nooramin_none_data31.txt" />
+     <None Include="Assets\nooramin_none_data39.txt" />
+     <None Include="Assets\dosia_base_right_data5.txt" />
+     <None Include="Assets\kim_left.txt" />
+     <None Include="Assets\coordinate_test_data1.txt" />
+     <None Include="Assets\nooramin_data27.txt" />
+     <None Include="Assets\jonathan_zeevi.txt" />
+     <None Include="Assets\dosia_mirrored_right_data4.txt" />
+     <None Include="Assets\nooramin_data58.txt" />
+     <None Include="Assets\nooramin_data13.txt" />
+     <None Include="Assets\dosia_base_right_data2.txt" />
+     <None Include="Assets\peggy_right.txt" />
+     <None Include="Assets\_data40.txt" />
+     <None Include="Assets\nooramin_data33.txt" />
+     <None Include="Assets\kim_data1.txt" />
+     <None Include="Assets\_data30.txt" />
+     <None Include="Assets\nooramin_none_data3.txt" />
+     <None Include="Assets\nooramin_data0.txt" />
+     <None Include="Assets\jacob_right_data0.txt" />
+     <None Include="Assets\noor_base_right_data17.txt" />
+     <None Include="Assets\noor_base_right_data20.txt" />
+     <None Include="Assets\noortest_data0.txt" />
+     <None Include="Assets\nooramin_none_data38.txt" />
+     <None Include="Assets\kim_data3.txt" />
+     <None Include="Assets\dkghoasrgh_data0.txt" />
+     <None Include="Assets\nooramin_data19.txt" />
+     <None Include="Assets\noor_base_right_data7.txt" />
+     <None Include="Assets\noor_base_right_data5.txt" />
+     <None Include="Assets\dosia_mirrored_right_data3.txt" />
+     <None Include="Assets\kim_left_data2.txt" />
+     <None Include="Assets\yuri_base_none_data0.txt" />
+     <None Include="Assets\yuri_mirrored_none_data0.txt" />
+     <None Include="Assets\noor_base_none_data26.txt" />
+     <None Include="Assets\_data37.txt" />
+     <None Include="Assets\jacob_right.txt" />
+     <None Include="Assets\jonathanrealtest1.txt" />
+     <None Include="Assets\nooramin_none_data29.txt" />
+     <None Include="Assets\_data20.txt" />
+     <None Include="Assets\yuri_base_none_data7.txt" />
+     <None Include="Assets\kim_left_glasses_data0.txt" />
+     <None Include="Assets\kim.txt" />
+     <None Include="Assets\noor_base_none_data9.txt" />
+     <None Include="Assets\_data0.txt" />
+     <None Include="Assets\nooramin_none_data8.txt" />
+     <None Include="Assets\_data6.txt" />
+     <None Include="Assets\noor_base_right_data10.txt" />
+     <None Include="Assets\noor_base_right_data26.txt" />
+     <None Include="Assets\_data3.txt" />
+     <None Include="Assets\noor_base_none_data28.txt" />
+     <None Include="Assets\peggy_base_none.txt" />
+     <None Include="Assets\_data2.txt" />
+     <None Include="Assets\nooramin_none_data12.txt" />
+     <None Include="Assets\yuri_base_none_data5.txt" />
+     <None Include="Assets\dosia_base_right_data4.txt" />
+     <None Include="Assets\_data21.txt" />
+     <None Include="Assets\_data36.txt" />
+     <None Include="Assets\kim_data2.txt" />
+     <None Include="Assets\_data17.txt" />
+     <None Include="Assets\dkghoasrgh.txt" />
+     <None Include="Assets\coordinate_test.txt" />
+     <None Include="Assets\noor_base_none_data16.txt" />
+     <None Include="Assets\jonathantest2_data0.txt" />
+     <None Include="Assets\noor_base_none_data22.txt" />
+     <None Include="Assets\noor_base_right_data0.txt" />
+     <None Include="Assets\nooramin_none_data24.txt" />
+     <None Include="Assets\jonathanrealtest2.txt" />
+     <None Include="Assets\dosia_base_right_data3.txt" />
+     <None Include="Assets\peggy_mirrored_none.txt" />
+     <None Include="Assets\dosia_base_none_data1.txt" />
+     <None Include="Assets\nooramin_none_data32.txt" />
+     <None Include="Assets\none_base_none.txt" />
+     <None Include="Assets\dosia_mirrored_right_data2.txt" />
+     <None Include="Assets\noor_base_right_data25.txt" />
+     <None Include="Assets\kim_non_dominant_data5.txt" />
+     <None Include="Assets\noor_base_right_data8.txt" />
+     <None Include="Assets\nooramin_none_data10.txt" />
+     <None Include="Assets\kim_mom_right_data0.txt" />
+     <None Include="Assets\_data25.txt" />
+     <None Include="Assets\nooramin_none_data16.txt" />
+     <None Include="Assets\nooramin_none_data0.txt" />
+     <None Include="Assets\nooramin_data7.txt" />
+     <None Include="Assets\kim_non_dominant_data2.txt" />
+     <None Include="Assets\nooramin_none_data28.txt" />
+     <None Include="Assets\nooramin_none_data27.txt" />
+     <None Include="Assets\jonathan_zeevi_data0.txt" />
+     <None Include="Assets\noor_base_none_data29.txt" />
+     <None Include="Assets\jonah_right_data0.txt" />
+     <None Include="Assets\noor_base_none_data20.txt" />
+     <None Include="Assets\noor_base_right.txt" />
+     <None Include="Assets\_data8.txt" />
+     <None Include="Assets\nooramin_none_data37.txt" />
+     <None Include="Assets\nooramin_data24.txt" />
+     <None Include="Assets\nooramin_data11.txt" />
+     <None Include="Assets\nooramin_none_data33.txt" />
+     <None Include="Assets\nooramin_data34.txt" />
+     <None Include="Assets\_data27.txt" />
+     <None Include="Assets\nooramin_none_data35.txt" />
+     <None Include="Assets\kim_right_colliders_data0.txt" />
+     <None Include="Assets\kim_right_colliders.txt" />
+     <None Include="Assets\lucia_right.txt" />
+     <None Include="Assets\noor_base_right_data16.txt" />
+     <None Include="Assets\noortest.txt" />
+     <None Include="Assets\nooramin_none_data4.txt" />
+     <None Include="Assets\nooramin_data14.txt" />
+     <None Include="Assets\kim_non_dominant_data7.txt" />
+     <None Include="Assets\noor_base_none_data2.txt" />
+     <None Include="Assets\nooramin_data9.txt" />
+     <None Include="Assets\nooramin_data28.txt" />
+     <None Include="Assets\nooramin_data43.txt" />
+     <None Include="Assets\peggy_right_glasses_data0.txt" />
+     <None Include="Assets\nooramin_none_data30.txt" />
+     <None Include="Assets\nooramin_data29.txt" />
+     <None Include="Assets\_data22.txt" />
+     <None Include="Assets\noor_test.txt" />
+     <None Include="Assets\noor_base_right_data21.txt" />
+     <None Include="Assets\tori_base_left.txt" />
+     <None Include="Assets\_data5.txt" />
+     <None Include="Assets\kim_left_data0.txt" />
+     <None Include="Assets\noor_test_data1.txt" />
+     <None Include="Assets\_data14.txt" />
+     <None Include="Assets\nooramin_data23.txt" />
+     <None Include="Assets\kim_non_dominant_data3.txt" />
+     <None Include="Assets\nooramin_data3.txt" />
+     <None Include="Assets\peggy_right_glasses.txt" />
+     <None Include="Assets\noor_base_none_data3.txt" />
+     <None Include="Assets\nooramin_data8.txt" />
+     <None Include="Assets\nooramin_data32.txt" />
+     <None Include="Assets\_data31.txt" />
+     <None Include="Assets\yuri_base_none_data1.txt" />
+     <None Include="Assets\yuri_mirrored_none.txt" />
+     <None Include="Assets\noor_base_right_data28.txt" />
+     <None Include="Assets\kim_left_glasses_data1.txt" />
+     <None Include="Assets\dosia_mirrored_right.txt" />
+     <None Include="Assets\_data33.txt" />
+     <None Include="Assets\noor_base_none_data10.txt" />
+     <None Include="Assets\noor_base_none_data18.txt" />
+     <None Include="Assets\_data1.txt" />
+     <None Include="Assets\noor_base_none_data8.txt" />
+     <None Include="Assets\nooramin_data22.txt" />
+     <None Include="Assets\noor_base_none_data23.txt" />
+     <None Include="Assets\noor_base_none_data11.txt" />
+     <None Include="Assets\nooramin_data38.txt" />
+     <None Include="Assets\nooramin_data53.txt" />
+     <None Include="Assets\peggy_base_right.txt" />
+     <None Include="Assets\jonah_right.txt" />
+     <None Include="Assets\_data9.txt" />
+     <None Include="Assets\nooramin_data59.txt" />
+     <None Include="Assets\nooramin_none_data34.txt" />
+     <None Include="Assets\participant_x.txt" />
+     <None Include="Assets\nooramin_none_data23.txt" />
+     <None Include="Assets\coordinate_test_data0.txt" />
+     <None Include="Assets\kim_non_dominant.txt" />
+     <None Include="Assets\jonathanrealtest2_data0.txt" />
+     <None Include="Assets\nooramin_data47.txt" />
+     <None Include="Assets\nooramin_none_data21.txt" />
+     <None Include="Assets\nooramin_data17.txt" />
+     <None Include="Assets\nooramin_none_data11.txt" />
+     <None Include="Assets\nooramin_none_data25.txt" />
+     <None Include="Assets\noor_base_right_data11.txt" />
+     <None Include="Assets\dosia_base_right.txt" />
+     <None Include="Assets\_data13.txt" />
+     <None Include="Assets\nooramin_none_data5.txt" />
+     <None Include="Assets\kim_non_dominant_data0.txt" />
+     <None Include="Assets\noor_base_right_data1.txt" />
+     <None Include="Assets\nooramin_data18.txt" />
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AndroidJNIModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DSPGraphModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputLegacyModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.LocalizationModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ProfilerModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StreamingModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubsystemsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextCoreModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityTestProtocolModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VFXModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Valve.Newtonsoft.Json">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="netstandard">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Win32.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.AppContext">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Concurrent">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.NonGeneric">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Specialized">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.EventBasedAsync">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.TypeConverter">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Console">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data.Common">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Contracts">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Debug">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.FileVersionInfo">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Process">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.StackTrace">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TextWriterTraceListener">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tools">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.TraceSource">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Diagnostics.Tracing">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Dynamic.Runtime">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Calendars">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.ZipFile">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.DriveInfo">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.FileSystem.Watcher">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.IsolatedStorage">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.MemoryMappedFiles">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Pipes">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.UnmanagedMemoryStream">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Expressions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Parallel">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Linq.Queryable">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NameResolution">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.NetworkInformation">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Ping">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Requests">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Security">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Sockets">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebHeaderCollection">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets.Client">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.WebSockets">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ObjectModel">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Extensions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Reader">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.ResourceManager">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Resources.Writer">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.CompilerServices.VisualC">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Extensions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Handles">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Numerics">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Formatters">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Json">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization.Xml">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Claims">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Algorithms">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Csp">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Encoding">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.Primitives">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Cryptography.X509Certificates">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.Principal">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Security.SecureString">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.Encoding.Extensions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Text.RegularExpressions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Overlapped">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Parallel">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Thread">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.ThreadPool">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Timer">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ValueTuple">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.ReaderWriter">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XDocument">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlDocument">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XmlSerializer">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.XPath.XDocument">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ComponentModel.Composition">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression.FileSystem">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.ServiceModel.Web">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Transactions">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Web">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Serialization">
+ <HintPath>C:/Users/acryl/OneDrive/Desktop/2019.3.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Subsystem.Registration">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.VSCode.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.CollabProxy.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Rider.Editor">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/Pacman-master - Projector - Easy/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{D659C768-3886-4AC5-379A-0BA06D369F1A}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{9EAD15C7-98E9-B3AB-5CC6-52B7E12B9436}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{1750D725-4786-0F05-698E-5D2FA774EAC4}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{33FEE639-67CB-AC37-055C-44A1451AB009}</Project>
+      <Name>SteamVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{8FC0AE62-AEF0-61EB-72F2-AB86934786C0}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
