@@ -12,6 +12,8 @@ public class handTracker : MonoBehaviour
     private string coordinates;
     private int i = 0;
 
+    private int doOnce = 0;
+
     public void CreateText()
     {
 
@@ -40,8 +42,13 @@ public class handTracker : MonoBehaviour
     {
         time += Time.deltaTime; //Increment time
 
+        if (Input.GetKeyDown("space"))
+        {
+          doOnce++;
+        }
 
-        if (Time.timeScale == 1)
+
+      if (doOnce == 1)
         {
             coordinates = time.ToString() + "\t" + transform.position.x.ToString() + "\t" + transform.position.y.ToString() + "\t" + transform.position.z.ToString() + "\n";
             File.AppendAllText(path, coordinates);
