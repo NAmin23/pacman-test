@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637794638033433012
-    m_Hash: 3100253071
+      ticks: 637795515196040953
+    m_Hash: 3460902075
   m_LockFileStatus:
     m_FilePath: C:/Users/acryl/OneDrive/Documents/GitHub/pacman-test/HandTracker/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637794638033542711
-    m_Hash: 2744495842
+      ticks: 637795515196040953
+    m_Hash: 3490109017
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

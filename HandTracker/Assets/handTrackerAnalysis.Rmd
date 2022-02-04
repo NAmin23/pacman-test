@@ -4,7 +4,7 @@ output: html_document
 ---
 
 ```{r}
-dataIndex = 9
+dataIndex = 13
 dataPath = paste("handTracker", dataIndex,".txt", sep = "")
 
 if(file.exists(dataPath))
@@ -39,5 +39,9 @@ scatter3D(x, y, z, pch = 18, cex = 2,
     xlab = "x", ylab = "y", zlab = "z",  
     surf = list(x = x.pred, y = y.pred, z = z.pred,  
     facets = NA, fit = fitpoints))
+
+#scatter with no line
+scatter3D(x, y, z, phi = 0, bty = "g",
+        pch = 20, cex = 2, ticktype = "detailed")
 ```
 
