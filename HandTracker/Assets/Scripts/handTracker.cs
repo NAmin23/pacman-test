@@ -12,6 +12,8 @@ public class handTracker : MonoBehaviour
   private string coordinates;
   private int i = 0;
 
+  private int doOnce;
+
   public void CreateText()
   {
 
@@ -19,7 +21,7 @@ public class handTracker : MonoBehaviour
 
     if (!File.Exists(path)) //Create new file if it doesn't exist
     {
-      File.WriteAllText(path, "time\t" + "x\t" + "y\t" + "z\t");
+      File.WriteAllText(path, "time\t" + "x\t" + "y\t" + "z\t" + "\n");
     }
     else //If it does exist, create a new title for the data path
     {
@@ -33,15 +35,18 @@ public class handTracker : MonoBehaviour
     CreateText();
     coordinates = "";
     time = .0f;
-    Time.timeScale = 0;
   }
 
   private void Update()
   {
     time += Time.deltaTime; //Increment time
 
+    if (Input.GetKeyDown("space"))
+    {
+      doOnce++;
+    }
 
-    if (Time.timeScale == 1)
+      if (doOnce == 1)
     {
       coordinates = time.ToString() + "\t" + transform.position.x.ToString() + "\t" + transform.position.y.ToString() + "\t" + transform.position.z.ToString() + "\n";
       File.AppendAllText(path, coordinates);

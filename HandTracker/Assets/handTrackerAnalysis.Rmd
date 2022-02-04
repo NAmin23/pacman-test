@@ -1,0 +1,15 @@
+---
+title: "HandTracker"
+output: html_document
+---
+
+```{r}
+dataIndex = 9
+dataPath = paste("handTracker", dataIndex,".txt", sep = "")
+
+if(file.exists(dataPath))
+{
+  df = read.table(dataPath, header = TRUE)
+  dataIndex = dataIndex + 1;
+}
+```
