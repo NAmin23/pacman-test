@@ -17,6 +17,8 @@ public class ColliderPosition : MonoBehaviour
     // Update is called once per frame
    void Update()
    {
+    transform.position = tracker.transform.position + adjustment;
+    /*
      if(Time.deltaTime == 0)
      {
        transform.position = tracker.transform.position + adjustment;
@@ -27,5 +29,6 @@ public class ColliderPosition : MonoBehaviour
        transform.position = tracker.transform.position + adjustment;
      }
      counter++;
+     */
   }
 }

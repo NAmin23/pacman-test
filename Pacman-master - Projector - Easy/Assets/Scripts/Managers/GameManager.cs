@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour {
 		if(scared && _timeToCalm <= Time.time)
 			CalmGhosts();
 
-    if (score == 1000) //END GAME HERE!!
+    if (score == 10000) //END GAME HERE!!
     {
       UnityEditor.EditorApplication.isPlaying = false;
       //Application.Quit();
