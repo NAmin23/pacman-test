@@ -9,7 +9,8 @@ public class PacdotManagerScript : MonoBehaviour
 
     private GameObject[] allChildren;
     private int totPacDots;
-  private int j = 0;
+    private int j = 0;
+
     // Placed on EventSystem
     void Start()
     {
@@ -49,9 +50,16 @@ public class PacdotManagerScript : MonoBehaviour
 
         if(innerMaze.transform.childCount == (totPacDots - j))
         {
-            allChildren[numDotsVisible + j].SetActive(true);
-      Debug.Log("PUNG");
-            j++;
+            int randomNum = Random.Range(1, 8);
+            Debug.Log("Random Number: " + randomNum);
+            for (int k = 0; k < randomNum; k++)
+            {
+                allChildren[numDotsVisible + j].SetActive(true);
+                Debug.Log("ïterator " + j);
+                k++;
+                j++;
+            }
+            
 
         }
     }
