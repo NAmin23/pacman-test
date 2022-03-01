@@ -15,6 +15,7 @@ public class Collision : PlayerController
   private string coordinates;
   public GameObject inputField;
   public GameObject canvas;
+  public GameObject elbowTracker; // New addition to track elbow
   private int i = 0;
   private int counter = 0;
 
@@ -118,7 +119,7 @@ public class Collision : PlayerController
 
     if(Time.timeScale == 1)
     {
-      coordinates = Mathf.Floor(_dest.x).ToString() + "\t" + Mathf.Floor(_dest.y).ToString() + "\t" + time.ToString() + "\t" + transform.position.x.ToString() + "\t" + transform.position.y.ToString() + "\t" + transform.position.z.ToString() + "\n";
+      coordinates = Mathf.Floor(_dest.x).ToString() + "\t" + Mathf.Floor(_dest.y).ToString() + "\t" + time.ToString() + "\t" + (transform.position.x - elbowTracker.transform.position.x).ToString() + "\t" + (transform.position.y - elbowTracker.transform.position.y).ToString() + "\t" + (transform.position.z - elbowTracker.transform.position.z).ToString() + "\n";
       File.AppendAllText(path, coordinates);
       File.AppendAllText(dataPath, coordinates);
       counter++;
