@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PacdotManagerScript : MonoBehaviour
 {
-    public GameObject innerMaze;
+    public GameObject maze;
     public int numDotsVisible = 5;
+    public int seed = 1;
 
     private GameObject[] allChildren;
     private int totPacDots;
@@ -14,17 +15,17 @@ public class PacdotManagerScript : MonoBehaviour
     // Placed on EventSystem
     void Start()
     {
-        if (innerMaze.activeSelf)
+        if (maze.activeSelf)
         {
-            Debug.Log("Inner Maze Child Count: " + innerMaze.transform.childCount);
+            Debug.Log("Inner Maze Child Count: " + maze.transform.childCount);
 
             int i = 0;
 
             // Array to hold all child obj
-            allChildren = new GameObject[innerMaze.transform.childCount];
+            allChildren = new GameObject[maze.transform.childCount];
 
             // Find each child object and store into array
-            foreach (Transform child in innerMaze.transform)
+            foreach (Transform child in maze.transform)
             {
                 allChildren[i] = child.gameObject;
                 allChildren[i].SetActive(false);
@@ -48,8 +49,9 @@ public class PacdotManagerScript : MonoBehaviour
     void Update()
     {
 
-        if(innerMaze.transform.childCount == (totPacDots - j))
+        if(maze.transform.childCount == (totPacDots - j))
         {
+            Random.InitState(seed);
             int randomNum = Random.Range(1, 8);
             Debug.Log("Random Number: " + randomNum);
             for (int k = 0; k < randomNum; k++)
