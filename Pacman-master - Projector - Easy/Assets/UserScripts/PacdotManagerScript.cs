@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class PacdotManagerScript : MonoBehaviour
 {
+
+    // Randomizes spawning of Pacdots
+    // Placed on EventSystem
+
     public GameObject maze;
-    public int numDotsVisible = 5;
+    public int numDotsVisible = 2;
     public int seed = 1;
 
     private GameObject[] allChildren;
     private int totPacDots;
     private int j = 0;
+    private int arrayIndex = 0;
 
-    // Placed on EventSystem
     void Start()
     {
         if (maze.activeSelf)
         {
-            Debug.Log("Inner Maze Child Count: " + maze.transform.childCount);
+            Debug.Log("Maze Child Count: " + maze.transform.childCount);
 
             int i = 0;
 
@@ -49,10 +53,9 @@ public class PacdotManagerScript : MonoBehaviour
     void Update()
     {
 
-        if(maze.transform.childCount == (totPacDots - j))
+        if (maze.transform.childCount == (totPacDots - j))
         {
-            Random.InitState(seed);
-            int randomNum = Random.Range(1, 8);
+            int randomNum = randomNumberGenerator();
             Debug.Log("Random Number: " + randomNum);
             for (int k = 0; k < randomNum; k++)
             {
@@ -64,5 +67,13 @@ public class PacdotManagerScript : MonoBehaviour
             
 
         }
+    }
+
+    int randomNumberGenerator()
+    {
+        int[] randomArray = { 1, 2, 3 };
+        Debug.Log("original random number is: " + randomArray[arrayIndex % 3]);
+        arrayIndex++;
+        return Mathf.RoundToInt(Mathf.Pow(2, randomArray[(arrayIndex % 3)])); // Minimum inclusive, max exclusive; returns 2, 4, or 8
     }
 }
