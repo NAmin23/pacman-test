@@ -35,6 +35,10 @@ public class Shooter : MonoBehaviour
 
     private int duckShotNum;
 
+  public GameObject crosshair;
+  public GameObject duck;
+  private bool duckHit;
+
     // Use this for initialization
     void Start()
     {
@@ -56,16 +60,25 @@ public class Shooter : MonoBehaviour
         GameManager.OnNewRound += ResetRound;
         GameManager.OnNewRound += ResetBullets;
         GameManager.OnNewRound += RoundNum;
+
+        // Noor's script
+        crosshair = GameObject.FindGameObjectWithTag("crosshair");
+        duckHit = crosshair.GetComponent<CrosshairController>().duckHit;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        duckHit = crosshair.GetComponent<CrosshairController>().duckHit;
+
+        if (Input.GetMouseButtonDown(0) || duckHit == true)
         {
             if (StaticVars.noClick == false)
             {
-                bulletAmount--;
+
+                //bulletAmount--;
+                Debug.Log("CORRECT");
+        
                 BulletGUI(bulletAmount);
 
                 if (bulletAmount < 0)
@@ -73,7 +86,7 @@ public class Shooter : MonoBehaviour
                     bulletAmount = 20;
                     StaticVars.roundNum++;
                     StaticVars.noClick = true;
-                    GameManager.OnDuckMiss();
+                    //GameManager.OnDuckMiss();
                 }
 
                 if (0 <= bulletAmount && bulletAmount <= 3)
@@ -81,6 +94,7 @@ public class Shooter : MonoBehaviour
                     float vol = Random.Range(volMin, volMax);
                     source.PlayOneShot(shot, vol);
                 }
+                
 
                 if (bulletAmount == 0)
                 {
@@ -89,17 +103,23 @@ public class Shooter : MonoBehaviour
 
                     Debug.DrawRay(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, Color.red, 3f);
 
-                    if (Physics.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, out hit, Mathf.Infinity))
+                    if (Physics.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, out hit, Mathf.Infinity) || duckHit == true)
                     {
-                        if (hit.transform.tag == "Duck")
+                        if (hit.transform.tag == "Duck" || duckHit == true)
                         {
                             StaticVars.noClick = true;
-                            DuckHealth health = hit.transform.GetComponent<DuckHealth>();
+              //crosshair = GameObject.FindGameObjectWithTag("crosshair");
+              //duckHit = crosshair.GetComponent<CrosshairController>().duckHit;
+                            duck = GameObject.FindGameObjectWithTag("Duck");
+              Debug.Log("shot");
+                            DuckHealth health = duck.transform.GetComponent<DuckHealth>();
                             health.KillDuck();
                             SetScore();
                             duckShotNum++;
                             DuckGUIShot();
-							StaticVars.duckNum++;
+
+
+              StaticVars.duckNum++;
 						}
                     }
                     else
@@ -116,18 +136,21 @@ public class Shooter : MonoBehaviour
 
                     Debug.DrawRay(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, Color.red, 3f);
 
-                    if (Physics.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, out hit, Mathf.Infinity))
+                    if (Physics.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Camera.main.transform.forward, out hit, Mathf.Infinity) || duckHit == true)
                     {
-                        if (hit.transform.tag == "Duck")
+                        if (hit.transform.tag == "Duck" || duckHit == true)
                         {
                             StaticVars.noClick = true;
-                            DuckHealth health = hit.transform.GetComponent<DuckHealth>();
+              duck = GameObject.FindGameObjectWithTag("Duck");
+              Debug.Log("shot");
+              DuckHealth health = duck.transform.GetComponent<DuckHealth>();
+              //DuckHealth health = hit.transform.GetComponent<DuckHealth>();
                             health.KillDuck();
                             SetScore();
                             duckShotNum++;
                             DuckGUIShot();
 							StaticVars.duckNum++;
-						}
+            }
                     }
                 }
             }
