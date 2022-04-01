@@ -21,7 +21,7 @@ public class CrosshairController : MonoBehaviour
     {
         if(true)
         {
-      transform.position = new Vector3(handTracker.transform.position.x - elbowTracker.transform.position.x, handTracker.transform.position.y - elbowTracker.transform.position.y, transform.position.z);
+      //transform.position = new Vector3(handTracker.transform.position.x - elbowTracker.transform.position.x, handTracker.transform.position.y - elbowTracker.transform.position.y, transform.position.z);
         }
 
         if (Input.GetKey(KeyCode.W))
