@@ -14,7 +14,7 @@ aggregateTime = subset(aggregateTime, aggregateTime$X.Average.Time. != "Average 
 ```
 
 ```{r import}
-dataPath = paste("nooramin_data", dataIndex,".txt", sep = "")
+dataPath = paste("Kim_04_02_22_middlerandom_right_data", dataIndex,".txt", sep = "")
 
 if(file.exists(dataPath))
 {
@@ -163,9 +163,9 @@ aggregateTime = data.frame("Average Time")
 aggregateTime = subset(aggregateTime, aggregateTime$X.Average.Time. != "Average Time")
 
 
-while(file.exists(paste("nooramin_data", dataIndex,".txt", sep = "")))
+while(file.exists(paste("Kim_04_02_22_Outermaze_right_data", dataIndex,".txt", sep = "")))
 {
-  df = read.table(paste("nooramin_data", dataIndex,".txt", sep = ""), header = TRUE)
+  df = read.table(paste("Kim_04_02_22_Outermaze_right_data", dataIndex,".txt", sep = ""), header = TRUE)
   dataIndex = dataIndex + 1;
   i = 1
 
